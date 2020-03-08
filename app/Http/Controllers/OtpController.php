@@ -58,7 +58,7 @@ class OtpController extends Controller
                 Auth::loginUsingId($user->id);
             }
             //Auth::guard('web');
-            return view('home');
+            return redirect('/home');
         }
         else{
             $error="Incorrect OTP";
